@@ -19,6 +19,8 @@ Person {
   name = "me"
 }
 
+LUA_PATH = "/var/lib/caravel/cache/pkmollman-caravel_config_repo/?;/var/lib/caravel/cache/pkmollman-caravel_config_repo/?.lua"
+
 local root_level_thing = require("root")
 
 print("root level thing.name: " .. root_level_thing.name)
