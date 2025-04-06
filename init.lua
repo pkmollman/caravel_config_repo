@@ -24,3 +24,7 @@ package.path = "/var/lib/caravel/cache/pkmollman-caravel_config_repo/?;/var/lib/
 local root_level_thing = require("root")
 
 print("root level thing.name: " .. root_level_thing.name)
+
+local nested_test_level_thing = require("nestes_package.test")
+
+print("nested test level thing.name: " .. nested_test_level_thing.name)
