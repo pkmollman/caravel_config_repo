@@ -25,6 +25,6 @@ local root_level_thing = require("root")
 
 print("root level thing.name: " .. root_level_thing.name)
 
-local nested_test_level_thing = require("nestes_package.test")
+local nested_test_level_thing = require("nested_package.test")
 
 print("nested test level thing.name: " .. nested_test_level_thing.name)
