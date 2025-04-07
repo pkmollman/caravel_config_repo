@@ -1,5 +1,3 @@
-print(LUA_PATH)
-
 local dir = File {
   state = "Present",
   file_type = "Directory",
@@ -18,8 +16,6 @@ end
 Person {
   name = "me"
 }
-
--- package.path = "/var/lib/caravel/cache/pkmollman-caravel_config_repo/?;/var/lib/caravel/cache/pkmollman-caravel_config_repo/?.lua"
 
 local root_level_thing = require("root")
 
