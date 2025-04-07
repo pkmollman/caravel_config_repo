@@ -17,6 +17,12 @@ Person {
   name = "me"
 }
 
+local p = Person
+
+p {
+    name = "pp"
+}
+
 local root_level_thing = require("root")
 
 print("root level thing.name: " .. root_level_thing.name)
