@@ -29,9 +29,4 @@ print("root level thing.name: " .. root_level_thing.name)
 
 local nested_test_level_thing = require("nested_package.test")
 
-print("nested test level thing.name: " .. nested_test_level_thing.name)
-
-local results = os.execute("ls /tmp")
-
-print("------")
-print(results)
+print("nested test level thing.name: " .. os.clock())
