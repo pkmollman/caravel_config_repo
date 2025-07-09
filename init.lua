@@ -31,8 +31,6 @@ local nested_test_level_thing = require("nested_package.test")
 
 print("nested test level thing.name: " .. nested_test_level_thing.name)
 
-local os = require 'os'
-
 local results = os.execute("ls /tmp")
 
 print("------")
