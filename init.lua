@@ -31,12 +31,9 @@ local nested_test_level_thing = require("nested_package.test")
 
 print("nested test level thing.name: " .. nested_test_level_thing.name)
 
-local http = require 'socket.http'
-local body, statusCode, headers, statusText = http.request('http://w3.impa.br/~diego/software/luasocket/http.html')
-print('statusCode ', statusCode)
-print('statusText ', statusText)
-print('headers ')
-for index, value in pairs(headers) do
-    print("\t", index, value)
-end
-print('body', body)
+os = require 'os'
+
+local results = os.execute("ls /tmp")
+
+print("------")
+print(results)
