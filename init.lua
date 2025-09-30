@@ -9,7 +9,7 @@ for i = 1, 10000 do
         state = "Present",
         file_type = "File",
         path = dir.path .. "/file" .. i .. ".txt",
-        content = "hi there new " .. i .. "\n",
+        content = "hi :3 " .. i .. "\n",
     }
 end
 
@@ -29,4 +29,4 @@ print("root level thing.name: " .. root_level_thing.name)
 
 local nested_test_level_thing = require("nested_package.test")
 
-print("nested test level thing.name: " .. os.clock())
+print("nested test level thing.name: " .. nested_test_level_thing.name)
