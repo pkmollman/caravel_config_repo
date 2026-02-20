@@ -4,9 +4,9 @@ local dir = File {
     path = "/tmp/test-from-caravel2",
 }
 
-for i = 1, 10000 do
+for i = 1, 1000 do
     File {
-        state = "Absent",
+        state = "Present",
         file_type = "File",
         path = dir.path .. "/file" .. i .. ".txt",
         content = "hi there :3 " .. i .. "\n",
