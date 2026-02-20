@@ -6,7 +6,7 @@ local dir = File {
 
 for i = 1, 10000 do
     File {
-        state = "Present",
+        state = "Absent",
         file_type = "File",
         path = dir.path .. "/file" .. i .. ".txt",
         content = "hi there :3 " .. i .. "\n",
