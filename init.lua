@@ -9,7 +9,7 @@ for i = 1, 10000 do
         state = "Present",
         file_type = "File",
         path = dir.path .. "/file" .. i .. ".txt",
-        content = "hi :3 " .. i .. "\n",
+        content = "hi there :3 " .. i .. "\n",
     }
 end
 
