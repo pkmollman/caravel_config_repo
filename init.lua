@@ -23,6 +23,13 @@ p {
     name = "pp"
 }
 
+
+local thing = {
+    stuff = "hi"
+}
+
+local repr = FileRepr()
+
 local root_level_thing = require("root")
 
 print("root level thing.name: " .. root_level_thing.name)

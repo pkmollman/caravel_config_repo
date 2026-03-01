@@ -1,8 +1,12 @@
 {
-  "$schema": "https://raw.githubusercontent.com/sumneko/vscode-lua/master/setting/schema.json",
-  "Lua.workspace.checkThirdParty": true,
-  "Lua.completion.keywordSnippet": "Replace",
-  "Lua.completion.displayContext": 5,
-  "Lua.completion.showParams": true,
-  "Lua.workspace.library": [".caravel/modules"]
+  "$schema": "https://raw.githubusercontent.com/LuaLS/vscode-lua/master/setting/schema.json",
+  "workspace": {
+    "checkThirdParty": false,
+    "library": ["./"]
+  },
+  "completion": {
+    "keywordSnippet": "Replace",
+    "displayContext": 5,
+    "showParams": true
+  }
 }
