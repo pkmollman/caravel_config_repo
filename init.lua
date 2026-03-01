@@ -29,7 +29,7 @@ local thing = {
 }
 
 local repr = FileRepr({})
-print(repr)
+print(repr.repr)
 
 local root_level_thing = require("root")
 
