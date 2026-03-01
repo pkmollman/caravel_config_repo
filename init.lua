@@ -11,6 +11,8 @@ function tprint (tbl, indent)
     if type(v) == "table" then
       print(formatting)
       tprint(v, indent+1)
+    elseif type(v) == 'boolean' then
+      print(formatting .. tostring(v))
     else
       print(formatting .. v)
     end
