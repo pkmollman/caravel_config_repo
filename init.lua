@@ -4,12 +4,14 @@ local dir = File {
     path = "/test-from-caravel2",
 }
 
-for i = 1, 1000 do
+print(dir)
+
+for i = 1, 10000 do
     File {
         state = "Present",
         file_type = "File",
         path = dir.path .. "/file" .. i .. ".txt",
-        content = "hi there :3 " .. i .. "\n",
+        content = "hi there " .. i .. "\n",
     }
 end
 
