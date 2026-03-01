@@ -25,6 +25,8 @@ end
 
 tprint(dir)
 
+print(dir.gid)
+
 for i = 1, 10000 do
     File {
         state = "Present",
