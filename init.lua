@@ -1,7 +1,7 @@
 local dir = File {
     state = "Present",
     file_type = "Directory",
-    path = "/tmp/test-from-caravel2",
+    path = "/test-from-caravel2",
 }
 
 for i = 1, 1000 do
