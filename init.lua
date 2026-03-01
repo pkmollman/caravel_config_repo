@@ -28,7 +28,7 @@ local thing = {
     stuff = "hi"
 }
 
-local repr = FileRepr()
+local repr = FileRepr({})
 
 local root_level_thing = require("root")
 
