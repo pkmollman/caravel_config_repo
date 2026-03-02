@@ -28,9 +28,6 @@ local thing = {
     stuff = "hi"
 }
 
-local repr = FileRepr({})
-print(repr.repr)
-
 local root_level_thing = require("root")
 
 print("root level thing.name: " .. root_level_thing.name)
