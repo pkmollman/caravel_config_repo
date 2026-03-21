@@ -1,12 +1,12 @@
 local dir = File {
     state = "Present",
     file_type = "Directory",
-    path = "/test-from-caravel2",
+    path = "/tmp/test-from-caravel2",
 }
 
 for i = 1, 10000 do
     File {
-        state = "Absent",
+        state = "Present",
         -- file_type = "File",
         path = dir.path .. "/file" .. i .. ".txt",
         content = "hi there " .. i .. "\n",
