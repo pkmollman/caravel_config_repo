@@ -1,40 +1,45 @@
+print("FACTS")
+print("OS: " .. facts.os.pretty_name)
+print("Kernel: " .. facts.kernel.release)
+print("My IP: " .. facts.network.ip)
+
 local dir = File {
     state = "Present",
     file_type = "Directory",
     path = "/tmp/test-from-caravel2",
 }
 
-for i = 1, 10000 do
+for i = 1, 1000 do
     File {
         state = "Present",
         file_type = "File",
         path = dir.path .. "/file" .. i .. ".txt",
-        content = "hi there " .. i .. "\n",
+        content = "file number" .. i .. "\n",
     }
 end
 
-Person {
-    name = "me"
-}
+-- Person {
+--     name = "me"
+-- }
 
-local p = Person
+-- local p = Person
 
-p {
-    name = "pp"
-}
+-- p {
+--     name = "pp"
+-- }
 
 
-local thing = {
-    stuff = "hi"
-}
+-- local thing = {
+--     stuff = "hi"
+-- }
 
-local root_level_thing = require("root")
+-- local root_level_thing = require("root")
 
-print("root level thing.name: " .. root_level_thing.name)
+-- print("root level thing.name: " .. root_level_thing.name)
 
-local nested_test_level_thing = require("nested_package.test")
+-- local nested_test_level_thing = require("nested_package.test")
 
-print("nested test level thing.name: " .. nested_test_level_thing.name)
+-- print("nested test level thing.name: " .. nested_test_level_thing.name)
 
 -- local file_owner_uid = caravel.core.file { path = "/opt/somefile" }.uid
 -- local children = caravel.core.find { path = "/var/run/somedirectory" }
