@@ -1,4 +1,5 @@
 print("FACTS")
+print("Hostname: " .. facts.network.hostname)
 print("OS: " .. facts.os.pretty_name)
 print("Kernel: " .. facts.kernel.release)
 print("My IP: " .. facts.network.ip)
@@ -14,7 +15,7 @@ for i = 1, 1000 do
         state = "Present",
         file_type = "File",
         path = dir.path .. "/file" .. i .. ".txt",
-        content = "file number" .. i .. "\n",
+        content = "file " .. i .. "\n",
     }
 end
 
